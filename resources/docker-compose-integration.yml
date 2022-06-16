@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  hardhat_examples:
+    build:
+      context: ${HARDHAT_EXAMPLES_BUILD_CONTEXT}
+    image: ${HARDHAT_EXAMPLES_IMAGE}
+    command: node scripts/integration-test.js
+    tty: true
+    stdin_open: true
+    networks:
+      - kwe-explorer-dev-prod_kwescan
+
+networks:
+  kwe-explorer-dev-prod_kwescan:
+    external: true
+    driver: bridge

@@ -1,0 +1,29 @@
+version: "3.4"
+services:
+  populate:
+    image: projectoracol/kwe-crawler:v10-staking-era
+    volumes:
+      - populate-modules:/usr/app/node_modules
+      - ./../crawler:/usr/app/
+    command: node  --max-old-space-size=16384 ./dist/populate/populate_${script}.js
+    networks:
+      - kwescan
+    environment:
+      - NODE_PROVIDER_URLS=["ws://substrate-node:9944"] #TODO extract this list
+      - SENTRY_DNS=${SENTRY_DNS}
+      - POSTGRES_PORT=${DB_PORT} #5432
+      - POSTGRES_HOST=${DB_HOST}
+      - POSTGRES_USER=${DB_USER} #kweexplorer
+      - POSTGRES_DATABASE=${DB_NAME} #kweexplorer
+      - POSTGRES_PASSWORD=${DB_PW} #kweexplorer
+      - ENVIRONMENT=${ENVIRONMENT}
+      - NETWORK=${NETWORK}
+
+volumes:
+  populate-modules: {} 
+
+networks:
+  kwescan:
+    external: 
+      name: kwe-explorer-${net}-${env}_kwescan
+    driver: bridge

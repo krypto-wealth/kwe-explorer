@@ -1,0 +1,35 @@
+table:
+  name: evm_event
+  schema: public
+object_relationships:
+- name: contract
+  using:
+    manual_configuration:
+      column_mapping:
+        contract_address: address
+      insertion_order: null
+      remote_table:
+        name: contract
+        schema: public
+- name: event
+  using:
+    foreign_key_constraint_on: event_id
+select_permissions:
+- permission:
+    allow_aggregations: true
+    columns:
+    - id
+    - event_id
+    - contract_address
+    - data_raw
+    - data_parsed
+    - method
+    - topic_0
+    - topic_1
+    - topic_2
+    - topic_3
+    - block_id
+    - extrinsic_index
+    - event_index
+    filter: {}
+  role: public

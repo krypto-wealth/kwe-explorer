@@ -1,0 +1,64 @@
+table:
+  name: pool
+  schema: public
+object_relationships:
+- name: evm_event
+  using:
+    foreign_key_constraint_on: evm_event_id
+- name: token_contract_1
+  using:
+    foreign_key_constraint_on: token_1
+- name: token_contract_2
+  using:
+    foreign_key_constraint_on: token_2
+array_relationships:
+- name: candlestick
+  using:
+    manual_configuration:
+      column_mapping:
+        id: pool_id
+      insertion_order: null
+      remote_table:
+        name: pool_day_candlestick
+        schema: public
+- name: fee
+  using:
+    manual_configuration:
+      column_mapping:
+        id: pool_id
+      insertion_order: null
+      remote_table:
+        name: pool_day_fee
+        schema: public
+- name: supply
+  using:
+    manual_configuration:
+      column_mapping:
+        id: pool_id
+      insertion_order: null
+      remote_table:
+        name: pool_day_supply
+        schema: public
+- name: volume
+  using:
+    manual_configuration:
+      column_mapping:
+        id: pool_id
+      insertion_order: null
+      remote_table:
+        name: pool_day_volume
+        schema: public
+select_permissions:
+- permission:
+    allow_aggregations: true
+    columns:
+    - id
+    - evm_event_id
+    - address
+    - token_1
+    - token_2
+    - pool_decimal
+    - decimal_1
+    - decimal_2
+    filter: {}
+  role: public

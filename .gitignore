@@ -1,0 +1,9 @@
+.vscode
+.DS_Store
+node_modules
+api/dist/
+crawler/dist/
+crawler/kwe-explorer.log
+/.idea/
+crawler/isolate-0x*.log
+crawler/.clinic

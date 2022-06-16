@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "kwe-explorer",
+  "description": "Kwe block explorer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwe-defi/kwe-explorer.git"
+  },
+  "keywords": [
+    "blockchain",
+    "polkadot",
+    "substrate",
+    "kwe"
+  ],
+  "author": "Žiga Franko Gorišek, Francesco Risitano, Matjaž Hirsman",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kwe-defi/kwe-explorer/issues"
+  },
+  "homepage": "https://github.com/kwe-defi/kwe-explorer#readme",
+  "workspaces": ["api","crawler", "frontend"],
+  "scripts": {}
+ }
