@@ -13,7 +13,7 @@ else
 endif
 
 up:
-	export $$(cat .env.$(net) | xargs) && docker-compose -p kwe-explorer-$(net)-$(env) -f $(COMPOSE-MANIFEST) up -d $(services)
+	export $$(cat .env.$(net) | xargs) && docker-compose -p kwe-explorer-$(net)-$(env) -f $(COMPOSE-MANIFEST) up $(services)
 
 build:
 	export $$(cat .env.$(net) | xargs) && docker-compose -p kwe-explorer-$(net)-$(env) -f $(COMPOSE-MANIFEST) up -d $(services) --build $(serv)
