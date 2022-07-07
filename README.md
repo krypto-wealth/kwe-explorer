@@ -1,6 +1,6 @@
 # Kwe explorer
 
-Open source block explorer for [Kwe chain](https://kwe.io) hosted at [https://kwescan.com](https://kwescan.com)
+Open source block explorer for [Kwe chain](https://krypto-wealth.org) hosted at [https://kwescan.com](https://kwescan.com)
 
 The `kwe-explorer` stack is containerised using docker and is run using a 
 container orchestration tool.  We have provided a docker-compose manifest to run
@@ -87,7 +87,7 @@ npm install --global yarn
 Install mono-repo:
 
 ```bash
-git clone https://github.com/kwe-defi/kwe-explorer.git
+git clone https://github.com/krypto-wealth/kwe-explorer.git
 cd kwe-explorer
 yarn
 ```

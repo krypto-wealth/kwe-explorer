@@ -13,13 +13,13 @@
           <div class="col-lg-6 text-lg-right">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="https://kwe.io" target="_blank">Website</a>
+                <a href="https://krypto-wealth.org" target="_blank">Website</a>
               </li>
               <li class="list-inline-item">
-                <a href="https://docs.kwe.io" target="_blank">Docs</a>
+                <a href="https://docs.krypto-wealth.org" target="_blank">Docs</a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/kwe-defi" target="_blank"
+                <a href="https://github.com/krypto-wealth" target="_blank"
                   >GitHub</a
                 >
               </li>

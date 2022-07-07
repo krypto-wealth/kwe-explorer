@@ -4,7 +4,7 @@
 //
 // Kwe chain modules and its indexes:
 //
-// https://github.com/kwe-defi/kwe-chain/blob/master/runtime/src/lib.rs#L765
+// https://github.com/krypto-wealth/kwe-chain/blob/master/runtime/src/lib.rs#L765
 //
 //
 
@@ -193,7 +193,7 @@ export const kweChainErrors = [
   {
     index: 7,
     module: 'Currencies',
-    // from https://github.com/kwe-defi/kwe-chain/blob/master/modules/currencies/src/lib.rs#L83
+    // from https://github.com/krypto-wealth/kwe-chain/blob/master/modules/currencies/src/lib.rs#L83
     errors: [
       {
         index: 0,
@@ -299,7 +299,7 @@ export const kweChainErrors = [
   {
     index: 20,
     module: 'EvmAccounts',
-    // from https://github.com/kwe-defi/kwe-chain/blob/master/modules/evm-accounts/src/lib.rs#L87
+    // from https://github.com/krypto-wealth/kwe-chain/blob/master/modules/evm-accounts/src/lib.rs#L87
     errors: [
       {
         index: 0,
@@ -337,7 +337,7 @@ export const kweChainErrors = [
   {
     index: 21,
     module: 'Evm',
-    // from https://github.com/kwe-defi/kwe-chain/blob/master/modules/evm/src/lib.rs#L339
+    // from https://github.com/krypto-wealth/kwe-chain/blob/master/modules/evm/src/lib.rs#L339
     errors: [
       {
         index: 0,
@@ -405,7 +405,7 @@ export const kweChainErrors = [
   {
     index: 22,
     module: 'EVMBridge',
-    // from https://github.com/kwe-defi/kwe-chain/blob/master/modules/evm-bridge/src/lib.rs#L36
+    // from https://github.com/krypto-wealth/kwe-chain/blob/master/modules/evm-bridge/src/lib.rs#L36
     errors: [
       {
         index: 0,
@@ -904,7 +904,7 @@ export const kweChainErrors = [
   {
     index: 51,
     module: 'Poc',
-    // from https://github.com/kwe-defi/kwe-chain/blob/master/modules/poc/src/lib.rs#L145
+    // from https://github.com/krypto-wealth/kwe-chain/blob/master/modules/poc/src/lib.rs#L145
     errors: [
       {
         index: 0,

@@ -95,7 +95,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="mb-3">Block time</h4>
-        <h6 class="d-inline-block">10s</h6>
+        <h6 class="d-inline-block">6s</h6>
       </div>
     </div>
   </div>

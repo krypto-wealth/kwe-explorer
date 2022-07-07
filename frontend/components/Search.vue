@@ -54,7 +54,7 @@ export default {
 <style lang="scss">
 .search-section {
   position: relative;
-  background: linear-gradient(130deg, #a51863, #3c127b);
+  background: linear-gradient(130deg, #3218a5, #0697eb);
   margin: 0 !important;
   display: flex;
   flex-flow: column nowrap;
@@ -70,7 +70,7 @@ export default {
     .search-section__alert-message {
       text-align: center;
       border-radius: 99px;
-      background: lighten(#a51863, 5%);
+      background: lighten(#1697e2, 5%);
       padding: 9px 17px;
       color: white;
       font-size: 0.875rem;

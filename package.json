@@ -4,7 +4,7 @@
   "description": "Kwe block explorer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kwe-defi/kwe-explorer.git"
+    "url": "git+https://github.com/krypto-wealth/kwe-explorer.git"
   },
   "keywords": [
     "blockchain",
@@ -15,9 +15,9 @@
   "author": "Žiga Franko Gorišek, Francesco Risitano, Matjaž Hirsman",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/kwe-defi/kwe-explorer/issues"
+    "url": "https://github.com/krypto-wealth/kwe-explorer/issues"
   },
-  "homepage": "https://github.com/kwe-defi/kwe-explorer#readme",
+  "homepage": "https://github.com/krypto-wealth/kwe-explorer#readme",
   "workspaces": ["api","crawler", "frontend"],
   "scripts": {}
  }
